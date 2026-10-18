@@ -7,6 +7,8 @@ echo "${start_time}"
 sleep 10
 echo "Script End Time"
 echo "${end_time}"
+echo "Time Difference"
+echo "${Time_diff}"
 
 
 
