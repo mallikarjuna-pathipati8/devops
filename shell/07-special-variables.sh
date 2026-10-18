@@ -12,10 +12,9 @@ echo "Who is running the user:$USER"
 echo "Path of the script:$PWD"
 echo "User home directory:$HOME"
 echo "PID of the scipt:$$"
-
-sleep &
+sleep 10 &
 echo "background running PID:$!"
 wait $!
-echo ""Line Number:$LINENO"
+echo "Line Number:$LINENO"
 echo "Previous exit status:$?"
 echo "Total time executed script:$SECONDS"
