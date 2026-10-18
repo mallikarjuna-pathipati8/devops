@@ -5,8 +5,10 @@
 # if no , exit the process
 
 user_id=$(id -u)
+echo "$user_id"
 if [ "$user_id" -ne 0 ]; then
    echo "Run with sudo access"
    exit 1
 fi
-npm install nginx -y
+echo "Proceeding"
+dnf install nginx -y
