@@ -26,7 +26,7 @@ fi
 echo "Enter the Number"
 read number2
 
-if [ $((number2 % 2)) -eq 0];then
+if [ $((number2 % 2)) -eq 0 ];then
 echo "even"
 else
 echo "odd"
