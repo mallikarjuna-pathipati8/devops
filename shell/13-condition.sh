@@ -4,7 +4,7 @@
 #Check sudo user if yes install nginx package
 # if no , exit the process
 
-user_id(id -u)
+user_id=(id -u)
 if [ $user_id -ne 0 ]; then
    echo "Run with sudo access"
    exit 1
