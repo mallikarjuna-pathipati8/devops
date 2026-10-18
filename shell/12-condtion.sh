@@ -14,13 +14,13 @@ read marks
 
 if [ $marks -lt 35 ]; then 
 echo "fail"
-elif[ $marks -le 50 ]; then 
+elif [ $marks -le 50 ]; then 
 echo "Third class"
-elif[ $marks -le 60 ]; then 
+elif [ $marks -le 60 ]; then 
 echo "second class"
-elif[ $marks -lt 75 ]; then
+elif [ $marks -lt 75 ]; then
 echo "First Class"
-elif[ $marks -ge 75 ]; then
+elif [ $marks -le 100 ]; then
 echo "distinction"
 else
 echo "Invalid Marks"
