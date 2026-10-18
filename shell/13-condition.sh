@@ -11,4 +11,17 @@ if [ "$user_id" -ne 0 ]; then
    exit 1
 fi
 echo "Proceeding"
-dnf install nginx -y
+dnf install nginx334 -y
+if [ $? -ne ]; then
+echo "Nginx installation failed"
+exit 1
+else
+echo "Nginx installation success"
+fi
+dnf install mysql -y
+if [ $? -ne 0 ]; then 
+echo "MySQL installation failed"
+exit1
+else
+echo "MySQL installation success"
+fi
