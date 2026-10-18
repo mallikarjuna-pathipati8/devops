@@ -1,20 +1,17 @@
 #!/bin/bash
-person1=$1
-person2=$2
-person3=$3
-echo "All arguments pass to the script:$@"
-echo "Number of arguments pass to the script:$#"
-echo "First Variable:$1"
-echo "Second Variable:$2"
-echo "Fourth Variable:$4"
-echo "Script name:$0"
-echo "Who is running the user:$USER"
-echo "Path of the script:$PWD"
-echo "User home directory:$HOME"
-echo "PID of the scipt:$$"
+
+echo "all aruguments passs to the scripts : $@"
+echo "Number of arguments pass to the script : $#"
+echo "Name of the script : $0"
+echo "First Argumentt of the script :$1"
+echo "Second Argument of the script: $2"
+echo "Who is running the script :$USER"
+echo "What the present working directory of the script:$PWD"
+echo "Home directory of the USER:$HOME"
+echo "PID of script:$$"
+
 sleep 10 &
-echo "background running PID:$!"
-wait $!
-echo "Line Number:$LINENO"
-echo "Previous exit status:$?"
-echo "Total time executed script:$SECONDS"
+echo "backend running PID : $!"
+echo "LineNumber: $LINENO"
+echo "Previous Command exits status : $?"
+echo "Total time of script execution: $SECONDS"
