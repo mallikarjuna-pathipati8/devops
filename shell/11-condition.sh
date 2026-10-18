@@ -17,7 +17,7 @@
 echo "Enter the Number"
 read number
 
-if ((number%2 == 0));then
+if (($number%2 == 0));then
 echo "even"
 else
 echo "odd"
