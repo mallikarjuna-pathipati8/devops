@@ -10,10 +10,7 @@ else
 fi
 
 validate() {
-    $1=$?
-    $2=
-
-    if [ $1 -ne 0 ]; then
+        if [ $1 -ne 0 ]; then
         echo "$2.. Failed"
         exit 1
     else
@@ -23,5 +20,5 @@ validate() {
 dnf install nginx -y
 validate $? "Nginx Installation"
 
-dnf install mysql -y
+dnf install mysqlwew -y
 validate $? "MySql Installation"
