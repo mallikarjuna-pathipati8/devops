@@ -14,7 +14,7 @@ validate() {
         echo "${2}.. Failed"
         exit 1
     else
-        echo "%{2}.. Success"
+        echo "${2}.. Success"
     fi
 }
 dnf install nginx -y
