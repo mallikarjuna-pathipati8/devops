@@ -17,6 +17,6 @@ echo "Second Fruits: ${Fruits[1]}"
 echo "Third Fruits: ${Fruits[2]}"
 
 
-Name:"Arjun"
+name:"Arjun"
 echo "$namepathipati"
 echo "${name}pathipati"
