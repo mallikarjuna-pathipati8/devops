@@ -27,7 +27,15 @@ validate ()
 dnf install nginx -y &>> $logs_file
 validate $? "Nginx Installation"
 
-dnf install mysql -y &>> logs_file 
+dnf install mysql -y &>> $logs_file 
 validate $? "Mysql Installation"
+
+dnf install htoppp -y &>> $logs_file
+validate $? "Htop Installation"
+
+dnf install htop -y &>> $logs_file
+validate $? "Htop Installation"
+
+echo "Script ended at $(date +"%F %T")" &>> $logs_file
 
 
