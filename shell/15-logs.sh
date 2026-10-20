@@ -4,13 +4,13 @@ echo "User Id ${user_id}"
 logs_folder="/var/log/shellpractice"
 logs_file="${logs_folder}/${0}.log"
 
-if [ $user_id -ne 0 ]; then
+if [ "$user_id" -ne 0 ]; then
    echo "Run with Sudo"
    exit 1
 else 
     echo "Sudo User"
 fi
-mkdir -p $logs_folder
+mkdir -p "$logs_folder"
 
 echo "Script started at $(date +"%F %T")"  &>> $logs_file
 
